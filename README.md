@@ -1,5 +1,5 @@
 # net-data
 
-Welconme!
+Welcome!
 
 Now Fuck off!
