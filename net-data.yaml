@@ -13,14 +13,14 @@ spec:
      version: ">=2.7.0"
  interval: 1m0s
 values:
-  parent:
-    claiming:
-      enabled: true
-      token: xpWhnDw5GG_rNA5z0W4xR-4Tw8Q-55a9l-PwFqm1Mst8Xcw93-S8a-3WoalybsD61JRzqedimj4lwTzktD6mILr9-v0qULThgyYFdGqBSIMS6-06Ydnxkj03JSwrzuF99jkUsvc
-      rooms:
-    
-  child:
-    claiming:
-      enabled: true
-      token: xpWhnDw5GG_rNA5z0W4xR-4Tw8Q-55a9l-PwFqm1Mst8Xcw93-S8a-3WoalybsD61JRzqedimj4lwTzktD6mILr9-v0qULThgyYFdGqBSIMS6-06Ydnxkj03JSwrzuF99jkUsvc
-      rooms: 
+ parent:
+ claiming:
+   enabled: true
+   token: xpWhnDw5GG_rNA5z0W4xR-4Tw8Q-55a9l-PwFqm1Mst8Xcw93-S8a-3WoalybsD61JRzqedimj4lwTzktD6mILr9-v0qULThgyYFdGqBSIMS6-06Ydnxkj03JSwrzuF99jkUsvc
+   rooms: 
+  
+ child:
+ claiming:
+   enabled: true
+   token: xpWhnDw5GG_rNA5z0W4xR-4Tw8Q-55a9l-PwFqm1Mst8Xcw93-S8a-3WoalybsD61JRzqedimj4lwTzktD6mILr9-v0qULThgyYFdGqBSIMS6-06Ydnxkj03JSwrzuF99jkUsvc
+   rooms:  
