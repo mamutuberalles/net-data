@@ -16,11 +16,11 @@ values:
   parent:
     claiming:
       enabled: true
-      token: ePnp3Sv2mFhZjU99g-hxul693fnOlMyEn6cBPFT1oGg7V0-z4w9Lg0Att_S0dl7Izy_iT-Fia7u0TqZxQFxpwfbbRl7g51Au9FV1uY3CZhf5OspXi3_9kIy6v1EKv3UX9I5xd7Q
+      token: xpWhnDw5GG_rNA5z0W4xR-4Tw8Q-55a9l-PwFqm1Mst8Xcw93-S8a-3WoalybsD61JRzqedimj4lwTzktD6mILr9-v0qULThgyYFdGqBSIMS6-06Ydnxkj03JSwrzuF99jkUsvc
       rooms:
     
   child:
     claiming:
       enabled: true
-      token: ePnp3Sv2mFhZjU99g-hxul693fnOlMyEn6cBPFT1oGg7V0-z4w9Lg0Att_S0dl7Izy_iT-Fia7u0TqZxQFxpwfbbRl7g51Au9FV1uY3CZhf5OspXi3_9kIy6v1EKv3UX9I5xd7Q
+      token: xpWhnDw5GG_rNA5z0W4xR-4Tw8Q-55a9l-PwFqm1Mst8Xcw93-S8a-3WoalybsD61JRzqedimj4lwTzktD6mILr9-v0qULThgyYFdGqBSIMS6-06Ydnxkj03JSwrzuF99jkUsvc
       rooms: 
