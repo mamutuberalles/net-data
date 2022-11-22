@@ -13,18 +13,15 @@ spec:
      version: ">=2.7.0"
  interval: 1m0s
 values:
- --set parent.claiming.enabled="true" --set parent.claiming.token="LTQRyk26vZmK7sNH9LsHF4PMqB_VlwieaaLm887ckdaZygTmLra7SBBpnpxng6NvfRUBRHgb8dtq5_EgrHsueLvbjDRy5DxQF7ITrYiYWJe_KCQhnK3p6Pq-PN92rulKn8N22u8" --set parent.claiming.rooms="a1d2d05c-c76b-48d3-9019-1d25da6a4997" --set child.claiming.enabled=true --set child.claiming.token="LTQRyk26vZmK7sNH9LsHF4PMqB_VlwieaaLm887ckdaZygTmLra7SBBpnpxng6NvfRUBRHgb8dtq5_EgrHsueLvbjDRy5DxQF7ITrYiYWJe_KCQhnK3p6Pq-PN92rulKn8N22u8" --set child.claiming.rooms="a1d2d05c-c76b-48d3-9019-1d25da6a4997"
-
-
-
-#  parent:
-#  claiming:
-#    enabled: true
-#    token: LTQRyk26vZmK7sNH9LsHF4PMqB_VlwieaaLm887ckdaZygTmLra7SBBpnpxng6NvfRUBRHgb8dtq5_EgrHsueLvbjDRy5DxQF7ITrYiYWJe_KCQhnK3p6Pq-PN92rulKn8N22u8
-#    rooms: a1d2d05c-c76b-48d3-9019-1d25da6a4997
-#  
-#  child:
-#  claiming:
-#    enabled: true
-#    token: LTQRyk26vZmK7sNH9LsHF4PMqB_VlwieaaLm887ckdaZygTmLra7SBBpnpxng6NvfRUBRHgb8dtq5_EgrHsueLvbjDRy5DxQF7ITrYiYWJe_KCQhnK3p6Pq-PN92rulKn8N22u8
-#   rooms: a1d2d05c-c76b-48d3-9019-1d25da6a4997
+  parent:
+  claiming:
+    enabled: true
+    token: LTQRyk26vZmK7sNH9LsHF4PMqB_VlwieaaLm887ckdaZygTmLra7SBBpnpxng6NvfRUBRHgb8dtq5_EgrHsueLvbjDRy5DxQF7ITrYiYWJe_KCQhnK3p6Pq-PN92rulKn8N22u8
+    rooms: a1d2d05c-c76b-48d3-9019-1d25da6a4997
+  
+  child:
+  claiming:
+    enabled: true
+    token: LTQRyk26vZmK7sNH9LsHF4PMqB_VlwieaaLm887ckdaZygTmLra7SBBpnpxng6NvfRUBRHgb8dtq5_EgrHsueLvbjDRy5DxQF7ITrYiYWJe_KCQhnK3p6Pq-PN92rulKn8N22u8
+   rooms: a1d2d05c-c76b-48d3-9019-1d25da6a4997
+#  --set parent.claiming.enabled="true" --set parent.claiming.token="LTQRyk26vZmK7sNH9LsHF4PMqB_VlwieaaLm887ckdaZygTmLra7SBBpnpxng6NvfRUBRHgb8dtq5_EgrHsueLvbjDRy5DxQF7ITrYiYWJe_KCQhnK3p6Pq-PN92rulKn8N22u8" --set parent.claiming.rooms="a1d2d05c-c76b-48d3-9019-1d25da6a4997" --set child.claiming.enabled=true --set child.claiming.token="LTQRyk26vZmK7sNH9LsHF4PMqB_VlwieaaLm887ckdaZygTmLra7SBBpnpxng6NvfRUBRHgb8dtq5_EgrHsueLvbjDRy5DxQF7ITrYiYWJe_KCQhnK3p6Pq-PN92rulKn8N22u8" --set child.claiming.rooms="a1d2d05c-c76b-48d3-9019-1d25da6a4997"
