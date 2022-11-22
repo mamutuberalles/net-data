@@ -12,3 +12,15 @@ spec:
        name: netdata
      version: ">=2.7.0"
  interval: 1m0s
+values:
+  parent:
+    claiming:
+      enabled: true
+      token: ePnp3Sv2mFhZjU99g-hxul693fnOlMyEn6cBPFT1oGg7V0-z4w9Lg0Att_S0dl7Izy_iT-Fia7u0TqZxQFxpwfbbRl7g51Au9FV1uY3CZhf5OspXi3_9kIy6v1EKv3UX9I5xd7Q
+      rooms:
+    
+  child:
+    claiming:
+      enabled: true
+      token: ePnp3Sv2mFhZjU99g-hxul693fnOlMyEn6cBPFT1oGg7V0-z4w9Lg0Att_S0dl7Izy_iT-Fia7u0TqZxQFxpwfbbRl7g51Au9FV1uY3CZhf5OspXi3_9kIy6v1EKv3UX9I5xd7Q
+      rooms: 
