@@ -49,8 +49,7 @@ spec:
         netdata:
           data: |
             [global]
-              memory mode = dbengine
-              
+              memory mode = dbengine             
             [plugins]
               cgroups = yes
               tc = yes
