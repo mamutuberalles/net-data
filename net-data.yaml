@@ -69,7 +69,7 @@ spec:
             enabled = yes
           [ml]
             enabled = no
-   k8State:
+   k8sState:
     configs:
       netdata:
         data: |
