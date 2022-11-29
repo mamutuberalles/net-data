@@ -46,7 +46,7 @@ spec:
             cgroups = yes
             tc = yes
             enable running new plugins = yes
-            check for new plugins every = 72000
+            check for new plugins every = 60
             python.d = yes
             charts.d = yes
             go.d = yes
