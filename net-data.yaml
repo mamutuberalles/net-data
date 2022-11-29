@@ -34,6 +34,7 @@ spec:
           role_recipients_slack[webmaster]="${DEFAULT_RECIPIENT_SLACK}"
           role_recipients_slack[proxyadmin]="${DEFAULT_RECIPIENT_SLACK}"
           role_recipients_slack[sitemgr]="${DEFAULT_RECIPIENT_SLACK}"
+          role_recipients_msteams[sysadmin]="2cc989e3854c4c9dac06d659c34cd279"
       example:
         enabled: true
       netdata:
