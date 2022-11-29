@@ -21,9 +21,9 @@ spec:
     configs:
       health:
         data: |
-          SEND_MSTEAMS = "YES"
-          MSTEAMS_WEBHOOK_URL = "https://ikelte.webhook.office.com/webhookb2/78fb5c89-26e1-4242-91e1-de43c34dd0c3@0133bb48-f790-4560-a64d-ac46a472fbbc/IncomingWebhook/CHANNEL/cfdc2d13-bff2-4780-9e2d-713e4a8a2c0f"
-          DEFAULT_RECIPIENT_MSTEAMS = "2cc989e3854c4c9dac06d659c34cd279"
+          SEND_MSTEAMS="YES"
+          MSTEAMS_WEBHOOK_URL="https://ikelte.webhook.office.com/webhookb2/78fb5c89-26e1-4242-91e1-de43c34dd0c3@0133bb48-f790-4560-a64d-ac46a472fbbc/IncomingWebhook/CHANNEL/cfdc2d13-bff2-4780-9e2d-713e4a8a2c0f"
+          DEFAULT_RECIPIENT_MSTEAMS="2cc989e3854c4c9dac06d659c34cd279"
 #          SEND_EMAIL="NO"
 #          SEND_SLACK="YES"
 #          SLACK_WEBHOOK_URL=""
