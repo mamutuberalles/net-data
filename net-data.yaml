@@ -4,98 +4,107 @@ metadata:
   name: netdata
   namespace: default
 spec:
- chart:
-   spec:
-     chart: netdata
-     sourceRef:
-       kind: HelmRepository
-       name: netdata
-     version: ">=3.7.0"
- interval: 1m0s
- values:
-   parent:
-    claiming:
-      enabled: true
-      token: LTQRyk26vZmK7sNH9LsHF4PMqB_VlwieaaLm887ckdaZygTmLra7SBBpnpxng6NvfRUBRHgb8dtq5_EgrHsueLvbjDRy5DxQF7ITrYiYWJe_KCQhnK3p6Pq-PN92rulKn8N22u8
-      rooms: a1d2d05c-c76b-48d3-9019-1d25da6a4997
-    configs:
-      health:
-        data: |
-          SEND_MSTEAMS="YES"
-          MSTEAMS_WEBHOOK_URL="https://ikelte.webhook.office.com/webhookb2/78fb5c89-26e1-4242-91e1-de43c34dd0c3@0133bb48-f790-4560-a64d-ac46a472fbbc/IncomingWebhook/CHANNEL/cfdc2d13-bff2-4780-9e2d-713e4a8a2c0f"
-          DEFAULT_RECIPIENT_MSTEAMS="2cc989e3854c4c9dac06d659c34cd279"
-          SEND_EMAIL="YES"
-          SEND_SLACK="YES"
-          SLACK_WEBHOOK_URL=""
-          DEFAULT_RECIPIENT_SLACK=""
-          role_recipients_slack[sysadmin]="${DEFAULT_RECIPIENT_SLACK}"
-          role_recipients_slack[domainadmin]="${DEFAULT_RECIPIENT_SLACK}"
-          role_recipients_slack[dba]="${DEFAULT_RECIPIENT_SLACK}"
-          role_recipients_slack[webmaster]="${DEFAULT_RECIPIENT_SLACK}"
-          role_recipients_slack[proxyadmin]="${DEFAULT_RECIPIENT_SLACK}"
-          role_recipients_slack[sitemgr]="${DEFAULT_RECIPIENT_SLACK}"
-          role_recipients_msteams[sysadmin]="2cc989e3854c4c9dac06d659c34cd279"
-      example:
+  chart:
+    spec:
+      chart: netdata
+      sourceRef:
+        kind: HelmRepository
+        name: netdata
+      version: ">=3.7.0"
+  interval: 1m0s
+  values:
+    parent:
+     claiming:
         enabled: true
-      netdata:
-        data: |
-          [global]
-            memory mode = dbengine
-
-          [plugins]
-            cgroups = yes
-            tc = yes
-            enable running new plugins = yes
-            check for new plugins every = 60
-            python.d = yes
-            charts.d = yes
-            go.d = yes
-            node.d = yes
-            apps = yes
-            proc = yes
-            idlejitter = yes
-            diskspace = yes
-   child:
-    claiming:
-      enabled: true
-      token: LTQRyk26vZmK7sNH9LsHF4PMqB_VlwieaaLm887ckdaZygTmLra7SBBpnpxng6NvfRUBRHgb8dtq5_EgrHsueLvbjDRy5DxQF7ITrYiYWJe_KCQhnK3p6Pq-PN92rulKn8N22u8
-      rooms: a1d2d05c-c76b-48d3-9019-1d25da6a4997
-    configs:
-     netdata:
-        data: |
-          [global]
-            memory mode = ram
-          [health]
-            enabled = yes
-          [ml]
-            enabled = no
-   k8sState:
-    configs:
-      netdata:
-        data: |
-          [global]
-            memory mode = ram
-          [health]
-            enabled = yes
-          [ml]
-            enabled = no
-          [plugins]
-            timex = no
-            checks = no
-            idlejitter = no
-            tc = no
-            diskspace = no
-            proc = no
-            cgroups = no
-            enable running new plugins = no
-            slabinfo = no
-            perf = no
-            go.d = yes
-            ioping = no
-            ebpf = no
-            charts.d = no
-            apps = no
-            python.d = yes
-            fping = no
-          
-#  --set parent.claiming.enabled="true" --set parent.claiming.token="LTQRyk26vZmK7sNH9LsHF4PMqB_VlwieaaLm887ckdaZygTmLra7SBBpnpxng6NvfRUBRHgb8dtq5_EgrHsueLvbjDRy5DxQF7ITrYiYWJe_KCQhnK3p6Pq-PN92rulKn8N22u8" --set parent.claiming.rooms="a1d2d05c-c76b-48d3-9019-1d25da6a4997" --set child.claiming.enabled=true --set child.claiming.token="LTQRyk26vZmK7sNH9LsHF4PMqB_VlwieaaLm887ckdaZygTmLra7SBBpnpxng6NvfRUBRHgb8dtq5_EgrHsueLvbjDRy5DxQF7ITrYiYWJe_KCQhnK3p6Pq-PN92rulKn8N22u8" --set child.claiming.rooms="a1d2d05c-c76b-48d3-9019-1d25da6a4997"
+        token: LTQRyk26vZmK7sNH9LsHF4PMqB_VlwieaaLm887ckdaZygTmLra7SBBpnpxng6NvfRUBRHgb8dtq5_EgrHsueLvbjDRy5DxQF7ITrYiYWJe_KCQhnK3p6Pq-PN92rulKn8N22u8
+        rooms: a1d2d05c-c76b-48d3-9019-1d25da6a4997
+     configs:
+        health:
+          data: |
+            SEND_MSTEAMS="YES"
+            MSTEAMS_WEBHOOK_URL="https://ikelte.webhook.office.com/webhookb2/78fb5c89-26e1-4242-91e1-de43c34dd0c3@0133bb48-f790-4560-a64d-ac46a472fbbc/IncomingWebhook/CHANNEL/cfdc2d13-bff2-4780-9e2d-713e4a8a2c0f"
+            DEFAULT_RECIPIENT_MSTEAMS="2cc989e3854c4c9dac06d659c34cd279"
+            SEND_EMAIL="YES"
+            SEND_SLACK="YES"
+            SLACK_WEBHOOK_URL=""
+            DEFAULT_RECIPIENT_SLACK=""
+            role_recipients_slack[sysadmin]="${DEFAULT_RECIPIENT_SLACK}"
+            role_recipients_slack[domainadmin]="${DEFAULT_RECIPIENT_SLACK}"
+            role_recipients_slack[dba]="${DEFAULT_RECIPIENT_SLACK}"
+            role_recipients_slack[webmaster]="${DEFAULT_RECIPIENT_SLACK}"
+            role_recipients_slack[proxyadmin]="${DEFAULT_RECIPIENT_SLACK}"
+            role_recipients_slack[sitemgr]="${DEFAULT_RECIPIENT_SLACK}"
+            role_recipients_msteams[sysadmin]="2cc989e3854c4c9dac06d659c34cd279"
+        example:
+          enabled: false
+          path: /etc/netdata/health.d/example.conf
+          data: |
+            alarm: example_alarm1
+              on: example.random
+            every: 2s
+            warn: $random1 > (($status >= $WARNING)  ? (70) : (80))
+            crit: $random1 > (($status == $CRITICAL) ? (80) : (90))
+            info: random
+              to: sysadmin
+        netdata:
+          data: |
+            [global]
+              memory mode = dbengine
+            [plugins]
+              cgroups = yes
+              tc = yes
+              enable running new plugins = yes
+              check for new plugins every = 60
+              python.d = yes
+              charts.d = yes
+              go.d = yes
+              node.d = yes
+              apps = yes
+              proc = yes
+              idlejitter = yes
+              diskspace = yes
+    child:
+      claiming:
+        enabled: true
+        token: LTQRyk26vZmK7sNH9LsHF4PMqB_VlwieaaLm887ckdaZygTmLra7SBBpnpxng6NvfRUBRHgb8dtq5_EgrHsueLvbjDRy5DxQF7ITrYiYWJe_KCQhnK3p6Pq-PN92rulKn8N22u8
+        rooms: a1d2d05c-c76b-48d3-9019-1d25da6a4997
+      configs:
+        netdata:
+          data: |
+            [global]
+              memory mode = ram
+            [health]
+              enabled = yes
+            [ml]
+              enabled = no
+    k8state:
+      configs:
+        netdata:
+          data: |
+            [global]
+              memory mode = ram
+            [health]
+              enabled = yes
+            [ml]
+              enabled = no
+            [plugins]
+              timex = no
+              checks = no
+              idlejitter = no
+              tc = no
+              diskspace = no
+              proc = no
+              cgroups = no
+              enable running new plugins = no
+              slabinfo = no
+              perf = no
+              go.d = yes
+              ioping = no
+              ebpf = no
+              charts.d = no
+              apps = no
+              python.d = yes
+              fping = no
+           
+#   --set parent.claiming.enabled="true" --set parent.claiming.token="LTQRyk26vZmK7sNH9LsHF4PMqB_VlwieaaLm887ckdaZygTmLra7SBBpnpxng6NvfRUBRHgb8dtq5_EgrHsueLvbjDRy5DxQF7ITrYiYWJe_KCQhnK3p6Pq-PN92rulKn8N22u8" --set parent.claiming.rooms="a1d2d05c-c76b-48d3-9019-1d25da6a4997" --set child.claiming.enabled=true --set child.claiming.token="LTQRyk26vZmK7sNH9LsHF4PMqB_VlwieaaLm887ckdaZygTmLra7SBBpnpxng6NvfRUBRHgb8dtq5_EgrHsueLvbjDRy5DxQF7ITrYiYWJe_KCQhnK3p6Pq-PN92rulKn8N22u8" --set child.claiming.rooms="a1d2d05c-c76b-48d3-9019-1d25da6a4997"
+ 
