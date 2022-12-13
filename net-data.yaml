@@ -65,6 +65,8 @@ spec:
               idlejitter = no
               diskspace = no
     child:
+      example:
+        enabled: true
       claiming:
         enabled: true
         token: LTQRyk26vZmK7sNH9LsHF4PMqB_VlwieaaLm887ckdaZygTmLra7SBBpnpxng6NvfRUBRHgb8dtq5_EgrHsueLvbjDRy5DxQF7ITrYiYWJe_KCQhnK3p6Pq-PN92rulKn8N22u8
