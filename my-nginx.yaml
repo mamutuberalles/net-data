@@ -1,15 +1,16 @@
 apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
-  name: my-press
+  name: my-nginx
   namespace: default
 spec:
  chart:
    spec:
-     chart: wordpress
+     chart: nginx
      sourceRef:
        kind: HelmRepository
        name: bitnami
      version: ">=2.7.0"
  interval: 30m0s
   
+# helm install my-release bitnami/nginx
